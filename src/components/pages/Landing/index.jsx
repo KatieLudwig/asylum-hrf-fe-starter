@@ -39,14 +39,14 @@ export const LandingPage = () => {
       </header>
       
       <main className='flex-grow flex flex-col items-center p-8 bg-gray-100'>
-        <div className='flex justify-between gap-x-8 w-full max-w-5xl mb-12'>
+        <div className='flex justify-center m-14 gap-20 text-2xl'>
         {[
             { img: barGraph, text: 'Search Grant Rates By Office' },
             { img: pieChart, text: 'Search Grant Rates By Nationality' },
             { img: lineGraph, text: 'Search Grant Rates Over Time' },
           ].map(({ img, text }, index) => (
             <div key={index} className='text-center'>
-              <img src={img} alt={text} className='w-40 mx-auto' />
+              <img src={img} alt={text} className='w-40 h-40 mx-auto' />
               <p className='mt-5'>{text}</p>
             </div>
           ))}
