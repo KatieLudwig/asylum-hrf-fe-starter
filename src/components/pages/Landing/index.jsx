@@ -26,9 +26,14 @@ export const LandingPage = () => {
     }, 10); // Adjust the interval time for smoothness
   };
 
+  const handleViewData = () => {
+    //Navigate to the graphs page
+    navigate('/graphs');
+  };
+
   const handleReadMore = () => {
     // TODO: navigate to the humanrightsfirst.org homepage
-    navigate('http://humanrightsfirst.org');
+    window.location.href = 'http://humanrightsfirst.org';
   };
 
   return (
@@ -54,7 +59,7 @@ export const LandingPage = () => {
         
         <div className='flex justify-center space-x-4 mb-20'>
         <button
-          onClick={handleReadMore}
+          onClick={handleViewData}
           className='px-4 py-2 bg-gray-600 text-white text-sm rounded hover:bg-gray-700'
         >
           View Data
