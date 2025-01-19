@@ -6,6 +6,7 @@ import { NotFoundPage } from './components/pages/NotFound/index.jsx';
 import * as React from 'react';
 import Profile from './components/pages/Profile/index.jsx';
 import { pageWrapper } from './components/layout/PageWrapper.jsx';
+import Callback from './components/pages/Callback.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
     path: '/profile',
     element: pageWrapper(<Profile />),
     errorElement: <NotFoundPage />,
+  },
+  {
+    path: '/callback',
+    element: <Callback />,
+    errorElement: <NotFoundPage />
   },
 ]);
 
